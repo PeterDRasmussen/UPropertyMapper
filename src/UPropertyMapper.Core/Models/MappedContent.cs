@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Practices.Unity;
 using Umbraco.Core.Models;
 using UPropertyMapper.Core.Ioc;
-using UPropertyMapper.Core.Ioc.Unity;
 using UPropertyMapper.Core.Mappers.Content;
 using UPropertyMapper.Core.Services;
 
