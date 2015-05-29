@@ -1,0 +1,16 @@
+﻿@using TestSite.Models
+@using UPropertyMapper.Mvc;
+
+@inherits TemplatePage<TestSite.Models.Home>
+@{
+    Layout = null;
+}
+
+<p>Binding Text: @(MappedPage.Text)</p>
+<p>Binding Number: @(MappedPage.Number)</p>
+
+<p>Binding of Image:</p>
+<img src="@MappedPage.Image.Src" />
+
+<p>Binding Content: @(MappedPage.Content.Text)</p>
+<p>Binding Content of child: @(MappedPage.GetChildren<SubPage>().ToList()[0].IsSubPage)</p>
